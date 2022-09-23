@@ -1,0 +1,256 @@
+/*** Слайдер ***/
+
+.slider,
+.slider2,
+.slider3,
+.slider4 {
+	position: relative;
+}
+
+.slider__container {
+	overflow: hidden;
+
+	background-color: #03a9f4;
+
+}
+
+
+.slider__items {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+.slider_disable-transition {
+	transition: none;
+}
+
+.slider__item {
+	flex: 0 0 100%;
+	max-width: 100%;
+	user-select: none;
+}
+
+.slider__item img {
+	height: 100%;
+}
+
+.slider__control {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 70px;
+	color: #fff;
+	text-align: center;
+	background: rgb(0 0 0 / 20%);
+	transform: translateY(-50%);
+}
+
+.slider__control_hide {
+	display: none;
+}
+
+.slider__control[data-slide="prev"] {
+	left: 0;
+}
+
+.slider__control[data-slide="next"] {
+	right: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+	color: #fff;
+	text-decoration: none;
+	background: rgb(0 0 0 / 30%);
+	outline: 0;
+}
+
+.slider__control::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.slider__control[data-slide="prev"]::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide="next"]::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__indicators {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 15;
+	display: flex;
+	justify-content: center;
+	margin-top: 0;
+	margin-right: 15%;
+	margin-bottom: 0;
+	margin-left: 15%;
+	padding-left: 0;
+	list-style: none;
+}
+
+.slider__indicators li {
+	flex: 0 1 auto;
+	box-sizing: content-box;
+	width: 30px;
+	height: 5px;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	background-color: rgb(255 255 255 / 50%);
+	background-clip: padding-box;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	cursor: pointer;
+}
+
+.slider__indicators li.active {
+	background-color: rgb(255 255 255 / 90%);
+}
+
+
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.slider__container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.slider__items {
+	counter-reset: slide;
+}
+
+
+
+.slider__item {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	counter-increment: slide;
+	/*
+	min-height: 250px;
+	*/
+
+	height: min-content;
+
+	position: relative;
+}
+
+.slider__item img {
+	width: 100%;
+}
+
+
+.slider__item::before {
+	content: counter(slide) "/3";
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #fff;
+	font-style: italic;
+	font-size: 32px;
+	font-weight: bold;
+	display: block;
+}
+
+
+.slider__item:nth-child(1) {
+	background-color: #f44336;
+}
+
+.slider__item:nth-child(2) {
+	background-color: #9c27b0;
+}
+
+.slider__item:nth-child(3) {
+	background-color: #3f51b5;
+}
+
+.slider__item:nth-child(4) {
+	background-color: #03a9f4;
+}
+
+.slider__item:nth-child(5) {
+	background-color: #4caf50;
+}
+
+
+
+
+.slider_foto {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	background-color: #03a9f4;
+
+	margin: 10px;
+}
+
+@media (max-width: 450px) {
+	.slider_foto {
+		width: 50px;
+		height: 50px
+	}
+}
+
+.slider_foto1 {
+	background: url('../Foto/cosmos.webp') center / cover no-repeat;
+}
+
+.slider_foto2 {
+	background: url('../Foto/Egor.webp') center / cover no-repeat;
+}
+
+.slider_foto3 {
+	background: url('../Foto/Katerina.webp') center / cover no-repeat;
+}
+
+.padding-l-r {
+	padding-top: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.slider__item,
+.slider__abs-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+.slider__abs-info {
+	position: absolute;
+}

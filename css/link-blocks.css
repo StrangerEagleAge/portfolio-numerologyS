@@ -1,0 +1,17 @@
+.link__block {
+	padding-top: 50px;
+	padding-bottom: 35px;
+}
+
+.link__block p {
+	font-weight: 800;
+}
+
+.link__block:hover {
+	text-decoration: underline;
+}
+
+.link__block2,
+.link__block3 {
+	color: #fff;
+}

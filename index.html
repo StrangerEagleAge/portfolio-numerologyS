@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Психология продаж от Марии</title>
+
+	<!-- favicon иконка -->
+	<link rel="shortcut icon" type="img/moon.svg" href="Foto/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="Foto/favicon.ico" />
+
+	<!-- Ключевые слова -->
+	<meta name="keywords" content="Психология продаж от Марии" />
+	<!-- Описание-->
+	<meta name="description" content="Психология продаж от Марии" />
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="modal.css">
+
+	<link rel="stylesheet" href="css/stocks.css">
+	<link rel="stylesheet" href="css/form-mail.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/link-blocks.css">
+
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/adaptive-text.css">
+
+	<!-- это для подключения своих иконочных шрифтов, которые можно скачать через 
+		консоль в font-awesom а потом с использованием icomoon сохранить их и вставить в проект
+	<link rel="stylesheet" href="css/iconsfont.css">
+	-->
+
+	<!-- Иконки font-awesome -->
+	<link rel="stylesheet" href="css/icon-fonts-all.css">
+
+
+	<!-- Шрифты иконочные: -->
+	<link rel="stylesheet" href="css/iconsfont.css">
+	<!-- Шрифты из макета: -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+
+
+	<!-- если не включен js у пользователя -->
+	<noscript>
+		<meta http-equiv="refresh" content="0; URL="https://strangereagleage.github.io/no-JS/">
+	</noscript>
+	<!-- End of если не включен js у пользователя -->
+	<!-- запрет на нажатие клавиш -->
+	<script src="js/not-save.js"></script>
+	<!-- End of запрет на нажатие клавиш -->
+
+	<!-- значки для контекстного меню на правый клик -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- End of значки для контекстного меню на правый клик -->
+
+	<link rel="stylesheet" href="css/context-menu.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<!-- контекстное меню на правый клик -->
+		<div id="contextMenu" class="context-menu" style="display: none">
+			<ul class="menu">
+				<li class="share"><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a></li>
+				<li class="rename"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Rename</a></li>
+				<li class="link"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> Copy Link Address</a></li>
+				<li class="copy"><a href="#"><i class="fa fa-copy" aria-hidden="true"></i> Copy to</a></li>
+				<li class="paste"><a href="#"><i class="fa fa-paste" aria-hidden="true"></i> Move to</a></li>
+				<li class="download"><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>
+				<li class="trash"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></li>
+			</ul>
+		</div>
+		<!-- End of контекстное меню на правый клик -->
+
+		<!-- Правая кнопка мыши -->
+		<script src="js/mouseRight.js"></script>
+
+		<!--? 1ый полноэкранный row блок -->
+		<!--
+			text_center - ставим если нужно текст разместить по центру
+			ставим прямо в div после flex__body
+
+			link_start или link_center - кнопка слева или по центру,
+			а если убрать, то растянется на всю ширину блока
+		-->
+		<section class="fullscreen fullscreen_row border_bottom" id="anchor-up">
+			<div class="flex-row">
+				<div class="flex__body">
+					<!--
+					<h1 class="fullscreen__title">Этот блок тоже занимает всю высоту экрана</h1>
+					<div class="fullscreen__text">У тебя всё получится!</div>
+					<a target="_blank" class="fullscreen__link" href="#">Вперёд</a>
+					-->
+					<!-- ссылка на просмотр картинки -->
+					<a href="#image" class="content__image popup-link">
+						<img src="Foto/wow.webp" alt="Картинка">
+					</a>
+				</div>
+				<!-- сама картинки на котору мы ссылались -->
+				<div id="image" class="popup">
+					<div class="popup__body">
+						<div class="popup__content popup__content_image">
+							<a href="#fixed__block" class="popup__close close-popup"> X </a>
+							<div class="popup__image">
+								<img src="Foto/wow.webp" alt="Упс! Должна была открыться картинка..">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of сама картинки на котору мы ссылались -->
+				<div class="flex__body">
+					<div class="fullscreen__text">
+
+						<h2><b> Привет, меня зовут <br />
+								Мария <br />
+								и я эксперт в психологии продаж.</b> <br />
+						</h2>
+						<br>
+
+						<p>Автор и ведущая Maria TV </p>
+						<p>Автор первой в России программы развития бизнес-навыков для женщин</p>
+						<p>Приглашенный лектор на Экономическом Факультете </p>
+						<p>МГУ им. М.В. Ломоносова</p>
+
+						<h2><b>Образование:</b></h2>
+						<br>
+						<p>МГУ им. В. М. Ломоносова, Экономический факультет, специализация Менеджмент </p>
+						<p>Дополнительно:
+							Harvard Business School,
+							Entrepreneurship Essentials
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!--? End of 1ый полноэкранный row блок -->
+
+
+		<section class="screen fullscreen_white">
+			<div class="screen__body text_center">
+
+				<hr class="hr-shelf">
+
+			</div>
+		</section>
+
+		<!--? 2ой адаптивный блок -->
+		<!--
+			text_center - ставим если нужно текст разместить по центру
+			ставим прямо в div после fullscreen__body 
+
+			link_start или link_center - кнопка слева или по центру,
+			а если убрать, то растянется на всю ширину блока
+		-->
+		<section class="screen fullscreen_white">
+			<div class="fullscreen__body text_center">
+
+				<a href="#">
+					<div class="link__block fullscreen__text screen_khaki">
+						<p> Правила активности + проверить ваш звездный баланс</p>
+					</div>
+				</a>
+				<a class="link" href="#">
+					<div class="link__block link__block2 fullscreen__text bg-color__pink">
+						<p> Бизнес Игра 2.0 с 21 по 25 сентября</p>
+					</div>
+				</a>
+				<a class="link" href="#">
+					<div class="link__block link__block3 fullscreen__text bg-color__orchid">
+						<p> Скачать контент-план с темами на сентябрь</p>
+					</div>
+				</a>
+
+			</div>
+		</section>
+		<!--? End of 2ой адаптивный блок -->
+
+
+
+		<!--? 3ий адаптивный блок СЛАЙДЕР -->
+		<section class="screen fullscreen_white">
+			<div class="fullscreen__body text_center">
+				<h1 class="header__title color__orchid">Ближайшие программы: </h1>
+				<div class="container">
+
+					<div class="slider">
+						<div class="slider__container">
+							<div class="slider__wrapper">
+								<div class="slider__items">
+
+									<div class="slider__item">
+										<!-- Контент 1 слайда -->
+										<img src="Foto/planeta.webp" alt="Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto1"></div>
+											</div>
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<h1 class="fullscreen__title_h2">Жизнь, как она есть</h1>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider__item">
+										<!-- Контент 2 слайда -->
+										<img src="Foto/planeta.webp" alt="Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto2"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<p>21 Октября</p>
+												<p>15 Декабря</p>
+												<p>Подробности по записи</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider__item">
+										<!-- Контент 3 слайда -->
+										<img src="Foto/planeta.webp" alt=" Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto3"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<p>24 Января</p>
+												<p>12 Февраля</p>
+												<p>Подробности по записи</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<a href="#" class="slider__control" data-slide="prev"></a>
+						<a href="#" class="slider__control" data-slide="next"></a>
+					</div>
+				</div>
+				<br /><br /><br />
+				<a target="_blank" class="fullscreen__link link_blue link_center" href="#anchor">Узнать подробнее</a>
+				<br /><br /><br /><br /><br /><br />
+
+
+				<!-- 2ой слайдер -->
+				<h1 class="header__title color__orchid">Купить в записи: </h1>
+				<div class="container">
+					<div class="slider2">
+						<div class="slider__container">
+							<div class="slider__wrapper">
+								<div class="slider__items">
+
+									<div class="slider__item">
+										<!-- Контент 1 слайда -->
+										<img src="Foto/planeta.webp" alt="Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto1"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<h1 class="fullscreen__title_h2">Жизнь, как она есть</h1>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider__item">
+										<!-- Контент 2 слайда -->
+										<img src="Foto/planeta.webp" alt="Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto2"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<p>ч.1</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider__item">
+										<!-- Контент 3 слайда -->
+										<img src="Foto/planeta.webp" alt=" Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto3"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<p>ч.2
+												</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<a href="#" class="slider__control" data-slide="prev"></a>
+						<a href="#" class="slider__control" data-slide="next"></a>
+					</div>
+				</div>
+				<br /><br /><br />
+				<a target="_blank" class="fullscreen__link link_blue link_center" href="#anchor">Узнать подробнее</a>
+				<br /><br /><br /><br /><br /><br />
+
+
+				<!-- 3ий слайдер -->
+				<div class="container">
+					<div class="slider3">
+						<div class="slider__container">
+							<div class="slider__wrapper">
+								<div class="slider__items">
+
+									<div class="slider__item">
+										<!-- Контент 1 слайда -->
+										<img src="Foto/planeta.webp" alt="Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto1"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<h1 class="fullscreen__title_h2">Иллюзия, обман</h1>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider__item">
+										<!-- Контент 2 слайда -->
+										<img src="Foto/planeta.webp" alt="Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto2"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<p>Глава Иллюзия</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider__item">
+										<!-- Контент 3 слайда -->
+										<img src="Foto/planeta.webp" alt=" Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto3"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<p>Глава Обман
+												</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<a href="#" class="slider__control" data-slide="prev"></a>
+						<a href="#" class="slider__control" data-slide="next"></a>
+					</div>
+				</div>
+				<br /><br /><br />
+				<a target="_blank" class="fullscreen__link link_blue link_center" href="#anchor">Узнать подробнее</a>
+				<br /><br /><br /><br /><br /><br />
+
+
+				<!-- 4ый слайдер -->
+				<div class="container">
+					<div class="slider4">
+						<div class="slider__container">
+							<div class="slider__wrapper">
+								<div class="slider__items">
+
+									<div class="slider__item">
+										<!-- Контент 1 слайда -->
+										<img src="Foto/planeta.webp" alt="Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto1"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<h1 class="fullscreen__title_h2">Что такое счастье?</h1>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider__item">
+										<!-- Контент 2 слайда -->
+										<img src="Foto/planeta.webp" alt="Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto2"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<p>Глава Эмоции</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider__item">
+										<!-- Контент 3 слайда -->
+										<img src="Foto/planeta.webp" alt=" Упс! Картинка не загрузиласть..">
+										<div class="slider__abs-info">
+											<!--
+											<div class="fullscreen__foto">
+												<div class="slider_foto slider_foto3"></div>
+											</div>
+											-->
+											<div class="fullscreen__text padding-l-r text__shadow">
+												<p>Глава Желания
+												</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<a href="#" class="slider__control" data-slide="prev"></a>
+						<a href="#" class="slider__control" data-slide="next"></a>
+					</div>
+				</div>
+				<br /><br /><br />
+				<a target="_blank" class="fullscreen__link link_blue link_center" href="#anchor">Узнать подробнее</a>
+				<br /><br /><br />
+
+			</div>
+		</section>
+		<!--? END of 3ий адаптивный блок СЛАЙДЕР -->
+
+
+		<!--? 4ый полноэкранный блок -->
+		<section class=" fullscreen fullscreen_white">
+			<div class="fullscreen__body">
+				<div class="text_center text_black">
+					<h1 class="fullscreen__title color__orchid">Бесплатные материалы:</h1>
+				</div>
+				<div class="fullscreen__text text_black">
+					<div class="block__center">
+						<div class="in-block__center">
+							<p><b>Youtube-канал </p>
+							<p>(100+ видео о бизнесе и продажах) </b></p>
+						</div>
+					</div>
+
+				</div>
+
+
+				<!-- ВИДЕО КАНАЛА -->
+				<div class="fullscreen__video">
+					<!--
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/??????" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>
+					</iframe>
+					-->
+					<img src="Foto/video-youtube.webp" alt="Упс! Картинка не загрузиласть..">
+				</div>
+
+				<br /><br /><br />
+				<a target="_blank" class="fullscreen__link link_blue link_center" href="#anchor">Мой
+					телеграм канал
+				</a>
+				<br /><br /><br /><br /><br /><br />
+
+			</div>
+		</section>
+		<!--? End of 4ый полноэкранный блок -->
+
+
+
+		<!--? 11ый адаптивный маленький блок -->
+		<section class="screen fullscreen_white">
+			<div class="fullscreen__body text_center text_black bg-color_white">
+				<h1 class="fullscreen__title">Будет интересно</h1>
+			</div>
+		</section>
+		<!--? END of 11ый адаптивный маленький блок -->
+
+
+
+		<!--? 13ый адаптивный блок ФОРМА СВЯЗИ -->
+		<section class="screen bg-color__black" id="anchor">
+			<div class="screen__body">
+
+				<div class="form">
+					<form action="#" id="form" class="form__body">
+						<div class="text_center">
+							<h1 class="form__title">ОСТАВИТЬ ЗАЯВКУ НА УЧАСТИЕ</h1>
+							<p>Психология продаж</p>
+						</div>
+						<div class="form__item">
+							<label for="formName" class="form__label">Имя*:</label>
+							<input id="formName" type="text" name="name" class="form__input _req">
+						</div>
+						<div class="form__item">
+							<label for="formEmail" class="form__label">E-mail*:</label>
+							<input id="formEmail" type="text" name="email" class="form__input _req _email">
+						</div>
+
+						<!-- поле для ввода сообщений -->
+						<div class="form__item">
+							<label for="formMessage" class="form__label">Сообщение:</label>
+							<textarea name="message" id="formMessage" class="form__input"></textarea>
+						</div>
+
+						<div class="form__item">
+							<div class="checkbox">
+								<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+								<label for="formAgreement" class="checkbox__label">
+									<span>Я даю своё согласие на обработку персональных
+										данных в соответствии с <a href="">условиями</a>*
+									</span>
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="form__button">Отправить</button>
+					</form>
+				</div>
+
+			</div>
+		</section>
+		<!--? END of 13ый адаптивный блок ФОРМА СВЯЗИ -->
+
+	</div>
+	<!--? END of wrapper -->
+
+
+	<!-- ? Якорь -->
+	<a class="footer__circle" href="#anchor-up">
+		<div class="anchor-up">
+			<h3 class="anchor-simbol">&#8679;</h3>
+		</div>
+	</a>
+	<!-- ? End of Якорь -->
+
+	<!-- ? SCRIPTS! -->
+	<script src="js/popups.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/anchor.js"></script>
+
+	<script>
+		alert('Заказчик отказался от этого проекта')
+		alert(message)
+	</script>
+	<!-- ?END of SCRIPTS! -->
+
+</body>
+
+</html>

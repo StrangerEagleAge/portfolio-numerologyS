@@ -1,0 +1,176 @@
+.header {
+	/*
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	*/
+	/*
+	background-color: #141414;
+	*/
+	background-color: #fff;
+	color: #fff;
+}
+
+.header a {
+	color: #fff;
+	font-size: 16px;
+}
+
+.top-header__menu {
+	flex: 1 1 auto;
+}
+
+
+
+.top-header__container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	min-height: 50px;
+
+	background-color: #1F1C21;
+}
+
+
+.top-header__menu {
+	flex: 1 1 auto;
+}
+
+.menu__body {}
+
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+
+	row-gap: 5px;
+	column-gap: 60px;
+	/*
+	gap: 60px;
+	*/
+}
+
+/*
+.menu__list li {
+	margin-right: 60px;
+}
+*/
+
+/*
+.menu__item {
+	font-size: 16px;
+}
+*/
+
+.menu__link {
+	font-size: 16rem;
+	line-height: 20px;
+}
+
+.top-header__user {
+	display: inline-flex;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+/* для управления иконкой */
+.top-header__user:before {
+	font-size: 28px;
+	margin-right: 15px;
+}
+
+
+.menu__icon {}
+
+.body-header {}
+
+
+
+
+
+
+
+.icon-menu {
+	display: none;
+}
+
+@media (max-width: 720px) {
+	.icon-menu {
+		display: block;
+		position: relative;
+		flex: 0 0 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+	}
+
+	.icon-menu span:before,
+	.icon-menu span:after {
+		content: "";
+		transition: all 0.3s ease 0s;
+		left: 0px;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+	}
+}
+
+
+/*========================================*/
+
+.body-header {
+	padding: 10px 0;
+	background-color: #ECF1F2;
+}
+
+.body-header__container {
+	display: flex;
+	min-height: 70px;
+	align-items: center;
+}
+
+.body-header__logo {}
+
+/* для управления иконкой */
+.body-header__logo:before {
+	font-size: 43px;
+	height: 43px;
+	color: #1F1C21;
+}
+
+._icon-logo {}
+
+.body-header__search {}
+
+.search-header {
+	position: relative;
+	background: rgba(7, 7, 7, 0.03);
+	border-radius: 3px;
+	border: 1px solid rgba(4, 4, 4, 0.5);
+}
+
+
+.search-header__button {
+	position: absolute;
+	background-color: transparent;
+	height: 41px;
+	width: 41px;
+	justify-content: center;
+	align-items: center;
+	top: 7px;
+	left: 8px;
+}
+
+.search-header__button:before {
+	font-size: 41px;
+}
+
+.search-header__input {
+	background-color: transparent;
+	border-radius: 3px;
+	height: 41px;
+	padding: 0px 20px 0px 50px;
+
+}
